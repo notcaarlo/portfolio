@@ -16,3 +16,5 @@ Este proyecto fue construido utilizando las siguientes herramientas y librerías
 * **Animaciones:** [Framer Motion](https://www.framer.com/motion/)
 * **Iconos:** [React Icons](https://react-icons.github.io/react-icons/) & [Lucide React](https://lucide.dev/)
 * **Despliegue:** GitHub Pages
+
+* TODO: Agregar funcionalidad para descargar CV
