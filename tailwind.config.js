@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Open Sauce Sans"', 'Inter', 'sans-serif'],
+        display: ['"Open Sauce Two"', '"Open Sauce Sans"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
-}
+};

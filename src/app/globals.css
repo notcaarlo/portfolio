@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: url("/fonts/OpenSauceSans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: url("/fonts/OpenSauceSans-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce Sans";
+  src: url("/fonts/OpenSauceSans-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("/fonts/OpenSauceTwo-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+:root {
+  --bg-page: #f2f2f2;
+  --text-primary: #000000;
+  --text-secondary: rgba(0, 0, 0, 0.48);
+  --text-muted: rgba(0, 0, 0, 0.24);
+  --card-bg: rgba(0, 0, 0, 0.08);
+  --card-inner-bg: rgba(0, 0, 0, 0.06);
+  --card-border: rgba(0, 0, 0, 0.03);
+  --accent-green: #7ecc00;
+}
+
+html.dark {
+  --bg-page: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.48);
+  --text-muted: rgba(255, 255, 255, 0.24);
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --card-inner-bg: rgba(255, 255, 255, 0.06);
+  --card-border: rgba(255, 255, 255, 0.06);
+  --accent-green: #ccf500;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: "Open Sauce Sans", Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+              color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  overflow-x: hidden;
+}
+
+/* Vexoo frosted glass card */
+.vexoo-card {
+  background-color: var(--card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0px 1px 0px 1px var(--card-border);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vexoo-card-inner {
+  background-color: var(--card-inner-bg);
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
