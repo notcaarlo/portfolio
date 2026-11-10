@@ -15,6 +15,6 @@ Este proyecto fue construido utilizando las siguientes herramientas y librerías
 * **Estilos:** [Tailwind CSS](https://tailwindcss.com/)
 * **Animaciones:** [Framer Motion](https://www.framer.com/motion/)
 * **Iconos:** [React Icons](https://react-icons.github.io/react-icons/) & [Lucide React](https://lucide.dev/)
-* **Despliegue:** GitHub Pages
+* **Despliegue:** Vercel
 
 * TODO: Agregar funcionalidad para descargar CV
